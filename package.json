@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "rimraf build && vite build",
+    "preios:init": "npm run build",
+    "preandroid:init": "npm run build",
+    "ios:init": "cap add ios && cap copy ios && cap open ios",
+    "android:init": "cap add android && cap copy android && cap open android",
+    "preios": "npm run build",
+    "preandroid": "npm run build",
+    "ios": "cap run ios",
+    "android": "cap run android"
+  },
+  "dependencies": {
+    "@capacitor/android": "5.4.2",
+    "@capacitor/core": "5.4.2",
+    "@capacitor/ios": "5.4.2",
+    "@vitejs/plugin-react": "4.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "6.0.8",
+    "styled-reset": "4.5.1",
+    "vite": "4.5.3",
+    "vite-tsconfig-paths": "4.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "5.4.1",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.8",
+    "@types/styled-components": "5.1.28",
+    "rimraf": "5.0.5"
+  }
+}
